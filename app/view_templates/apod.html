@@ -15,7 +15,9 @@
     <h1>NASA Astronomy Picture of the Day - {{ data.date }}</h1>
  
     <figure class="figure">
-        <img src="{{ data.url }}" class="figure-img img-fluid rounded" alt="NASA Astronomy Picture of the Day">
+        <div>
+            <img src="{{data.hdurl}}">
+        </div>
         <figcaption class="figure-caption">{{data.explanation}}.</figcaption>
     </figure>
 
